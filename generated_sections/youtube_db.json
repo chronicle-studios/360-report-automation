@@ -1,0 +1,181 @@
+{
+  "channelOverview": {
+    "subscribers": "17.7K",
+    "totalViews": "3.66M",
+    "totalLikes": "27.52K",
+    "totalComments": "2.07K",
+    "channelName": "Love & Pies",
+    "handle": "@loveandpiesgame",
+    "channelCreated": "May 29, 2020",
+    "channelAge": "5.4 years",
+    "videosInDataset": "60"
+  },
+  "performanceMetrics": {
+    "avgViewsPerVideo": "61.01K",
+    "avgLikesPerVideo": "459",
+    "avgCommentsPerVideo": "35",
+    "medianViews": "1.23K",
+    "avgLikeViewRatio": "0.75%",
+    "avgCommentViewRatio": "0.06%",
+    "avgEngagementRate": "0.81%"
+  },
+  "currentYearAnalysis": {
+    "monthlyData": [
+      {
+        "month": "Feb",
+        "views": 387,
+        "likes": 16,
+        "comments": 0
+      },
+      {
+        "month": "Mar",
+        "views": 1217,
+        "likes": 19.5,
+        "comments": 2
+      },
+      {
+        "month": "Apr",
+        "views": 3232.33,
+        "likes": 31.67,
+        "comments": 1.33
+      },
+      {
+        "month": "May",
+        "views": 1092.67,
+        "likes": 16.33,
+        "comments": 0.67
+      },
+      {
+        "month": "Jun",
+        "views": 46245,
+        "likes": 1176,
+        "comments": 56
+      },
+      {
+        "month": "Oct",
+        "views": 501.29,
+        "likes": 8.57,
+        "comments": 0
+      }
+    ],
+    "summaryCards": [
+      {
+        "label": "Best Month by Views",
+        "value": "Jun",
+        "detail": "46.24K avg views"
+      },
+      {
+        "label": "Engagement Trend",
+        "value": "Positive",
+        "detail": "Feb \u2192 Oct"
+      },
+      {
+        "label": "Publishing Frequency",
+        "value": "~2.8 videos/month",
+        "detail": "Based on current year uploads"
+      }
+    ]
+  },
+  "topVideos": [
+    {
+      "rank": 1,
+      "title": "What's In The Basement? - Love & Pies Merge Game",
+      "views": "2.67M",
+      "engagement": "220",
+      "engagementRate": "0.01%",
+      "type": "Short",
+      "year": "2022",
+      "duration": "38s"
+    },
+    {
+      "rank": 2,
+      "title": "Love & Pies: Ultimate Couples Challenge",
+      "views": "237.23K",
+      "engagement": "5.87K",
+      "engagementRate": "2.47%",
+      "type": "Long",
+      "year": "2024",
+      "duration": "14m"
+    },
+    {
+      "rank": 3,
+      "title": "Love & Piescast - Episode 1: Values",
+      "views": "143.61K",
+      "engagement": "3.71K",
+      "engagementRate": "2.58%",
+      "type": "Long",
+      "year": "2024",
+      "duration": "13m"
+    },
+    {
+      "rank": 4,
+      "title": "Love & Piescast - Episode 2 - Diversity in Design",
+      "views": "132.99K",
+      "engagement": "3.51K",
+      "engagementRate": "2.64%",
+      "type": "Long",
+      "year": "2024",
+      "duration": "12m"
+    },
+    {
+      "rank": 5,
+      "title": "Love & Piescast - Episode 3: Art & Events",
+      "views": "88.81K",
+      "engagement": "2.8K",
+      "engagementRate": "3.15%",
+      "type": "Long",
+      "year": "2024",
+      "duration": "11m"
+    },
+    {
+      "rank": 6,
+      "title": "Love & Piescast - Episode 4: Community",
+      "views": "81.16K",
+      "engagement": "3.15K",
+      "engagementRate": "3.88%",
+      "type": "Long",
+      "year": "2024",
+      "duration": "11m"
+    },
+    {
+      "rank": 7,
+      "title": "[OFFICIAL] Love & Pies - Merge 40s Launch Trailer",
+      "views": "77.66K",
+      "engagement": "121",
+      "engagementRate": "0.16%",
+      "type": "Short",
+      "year": "2021",
+      "duration": "40s"
+    },
+    {
+      "rank": 8,
+      "title": "Love & Pride - Intro",
+      "views": "46.38K",
+      "engagement": "4.55K",
+      "engagementRate": "9.82%",
+      "type": "Short",
+      "year": "2024",
+      "duration": "44s"
+    },
+    {
+      "rank": 9,
+      "title": "Love & Piescast: Pride Special 2025! \ud83c\udf08",
+      "views": "46.24K",
+      "engagement": "1.23K",
+      "engagementRate": "2.66%",
+      "type": "Long",
+      "year": "2025",
+      "duration": "19m"
+    },
+    {
+      "rank": 10,
+      "title": "Love & Pies Kate's Spoooky Costume Party \ud83d\udc7b",
+      "views": "34.72K",
+      "engagement": "3.11K",
+      "engagementRate": "8.97%",
+      "type": "Short",
+      "year": "2024",
+      "duration": "50s"
+    }
+  ]
+}
