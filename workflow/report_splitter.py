@@ -1,9 +1,12 @@
 from __future__ import annotations
 
+import logging
 import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass(frozen=True)
@@ -14,16 +17,16 @@ class SectionDefinition:
 
 
 SECTION_DEFINITIONS: List[SectionDefinition] = [
-    SectionDefinition("metadata", "metadata.md", ("^The Hook",)),
-    SectionDefinition("overview", "overview.md", ("^Overview",)),
-    SectionDefinition("primary_platform", "youtube.md", ("^YouTube", "^Primary Platform")),
-    SectionDefinition("community", "community.md", ("^The Community",)),
-    SectionDefinition("sentiment", "sentiment.md", ("^The Sentiment",)),
-    SectionDefinition("creative", "creative_impact.md", ("^The Creative",)),
-    SectionDefinition("proof", "commercial_success.md", ("^The Proof",)),
-    SectionDefinition("reach", "geographic_reach.md", ("^The Reach",)),
-    SectionDefinition("opportunities", "opportunities.md", ("^The Opportunities",)),
-    SectionDefinition("data_gaps", "data_gaps.md", ("^Data Gaps", "^Subsection: DATA GAPS")),
+    SectionDefinition("metadata", "metadata.md", ("^#+\\s*(the\\s+)?hook",)),
+    SectionDefinition("overview", "overview.md", ("^#+\\s*overview",)),
+    SectionDefinition("primary_platform", "youtube.md", ("^#+\\s*youtube", "^#+\\s*primary\\s+platform")),
+    SectionDefinition("community", "community.md", ("^#+\\s*(the\\s+)?community",)),
+    SectionDefinition("sentiment", "sentiment.md", ("^#+\\s*(the\\s+)?sentiment",)),
+    SectionDefinition("creative", "creative_impact.md", ("^#+\\s*(the\\s+)?creative",)),
+    SectionDefinition("proof", "commercial_success.md", ("^#+\\s*(the\\s+)?proof",)),
+    SectionDefinition("reach", "geographic_reach.md", ("^#+\\s*(the\\s+)?reach",)),
+    SectionDefinition("opportunities", "opportunities.md", ("^#+\\s*(the\\s+)?opportunities",)),
+    SectionDefinition("data_gaps", "data_gaps.md", ("^#+\\s*data\\s+gaps",)),
 ]
 
 
@@ -43,12 +46,37 @@ class ReportSplitter:
             sections["overview"] = sections["metadata"]
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
+        # Track found and missing sections
+        found_sections = []
+        missing_sections = []
+        
         for definition in SECTION_DEFINITIONS:
             content = sections.get(definition.key)
             if not content:
+                missing_sections.append(definition.key)
+                logger.warning(
+                    f"Section '{definition.key}' not found in report. "
+                    f"Expected patterns: {definition.patterns}"
+                )
                 continue
+            found_sections.append(definition.key)
             target = self.output_dir / definition.filename
             target.write_text(content.strip() + "\n", encoding="utf-8")
+
+        # Log summary
+        logger.info(f"✓ Found {len(found_sections)} sections: {', '.join(found_sections)}")
+        if missing_sections:
+            logger.warning(f"⚠ Missing {len(missing_sections)} sections: {', '.join(missing_sections)}")
+            
+        # Error if critical sections are missing
+        critical_sections = {"metadata", "primary_platform", "community"}
+        missing_critical = critical_sections.intersection(missing_sections)
+        if missing_critical:
+            raise ValueError(
+                f"Critical sections missing from report: {', '.join(missing_critical)}. "
+                f"Report splitting failed. Check that your report.txt contains these sections "
+                f"with proper headers (e.g., '# THE HOOK', '# YOUTUBE', '# THE COMMUNITY')."
+            )
 
         return sections
 
