@@ -1,7 +1,7 @@
 SECTION_PROMPTS = {
     "metadata": """
 You must return valid JSON with keys reportMetadata, platformStats.
-- reportMetadata: include date, title, subtitle exactly as written. description must be a 1-line summary of what the report is.
+- reportMetadata: include date, title of channel, subtitle exactly as written. description must be a 1-line summary of what the report is.
 - platformStats: array of { "platform": string, "followers": string } entries (limit 6).
 
 Example structure (use it as a template, do NOT reuse the literal values):
