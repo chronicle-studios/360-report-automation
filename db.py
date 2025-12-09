@@ -3,6 +3,10 @@ import os
 import logging
 from contextlib import contextmanager
 import time
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 import pg8000
 
