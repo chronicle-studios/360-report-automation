@@ -6,6 +6,10 @@ from __future__ import annotations
 import argparse
 import logging
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 from workflow.report_workflow import ReportWorkflow, ResearchInputs
 
