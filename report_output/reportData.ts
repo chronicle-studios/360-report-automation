@@ -1,37 +1,86 @@
-// Love & Pies Report Data (auto-generated from love_and_pies JSONs)
+// Ghost Tequila Report Data (auto-generated)
 export const reportMetadata = {
   date: "2026-04-14 (UTC)",
   title: "Ghost Tequila",
-  subtitle: "The Hook – Spicy Tequila’s Multi-Platform Footprint",
-  description: "Snapshot of Ghost Tequila’s multi-platform presence, ratings, and mentions based on publicly verifiable data."
+  subtitle: "The Hook – Spicy Tequila's Multi-Platform Footprint",
+  description: "Snapshot of Ghost Tequila's multi-platform presence, ratings, and mentions based on publicly verifiable data from the research report."
 };
 export const platformStats = [
   {
-    platform: "instagram",
-    followers: "N/A"
+    platform: "instagram (@ghosttequila)",
+    followers: "~10K-50K (estimated; login-gated exact count)"
   },
   {
-    platform: "twitter/x",
-    followers: "N/A"
+    platform: "twitter/x (@ghosttequila)",
+    followers: "~621 (Twstalker snapshot, late 2022)"
   },
   {
     platform: "facebook",
-    followers: "N/A"
+    followers: "Nominal brand page; engagement sparse vs. Instagram"
   },
   {
     platform: "tiktok",
-    followers: "N/A"
+    followers: "No verified owned account; earned cocktail UGC only"
   },
   {
     platform: "youtube",
-    followers: "N/A"
+    followers: "No owned channel; earned reviews typically few thousand views"
   },
   {
     platform: "reddit",
-    followers: "N/A"
+    followers: "Active threads across r/tequila, r/cocktails, r/spicy, r/HotPeppers"
   }
 ];
-export const chapters = [];
+export const chapters = [
+  {
+    id: "hook",
+    label: "The Hook",
+    emoji: "🌶️",
+    number: 1
+  },
+  {
+    id: "instagram",
+    label: "Instagram & Social",
+    emoji: "📱",
+    number: 2
+  },
+  {
+    id: "community",
+    label: "The Community",
+    emoji: "👥",
+    number: 3
+  },
+  {
+    id: "sentiment",
+    label: "The Sentiment",
+    emoji: "💬",
+    number: 4
+  },
+  {
+    id: "creative",
+    label: "Creative Impact",
+    emoji: "🎨",
+    number: 5
+  },
+  {
+    id: "commercial",
+    label: "The Proof",
+    emoji: "📊",
+    number: 6
+  },
+  {
+    id: "geographic",
+    label: "The Reach",
+    emoji: "🌎",
+    number: 7
+  },
+  {
+    id: "opportunities",
+    label: "Opportunities",
+    emoji: "🚀",
+    number: 8
+  }
+];
 
 export const overviewData = {
   introText: "Ghost Tequila—a ghost pepper–infused 100% Blue Weber agave spirit—has built a niche yet energetic online presence spanning social media, reviews, and industry press. Customer sentiment is notably positive, highlighted by strong ratings on a major delivery platform.",
@@ -71,225 +120,217 @@ export const overviewData = {
 };
 
 export const youtubeData = {
-  channelOverview: {
-    subscribers: "17.7K",
-    totalViews: "3.66M",
-    totalLikes: "27.52K",
-    totalComments: "2.07K",
-    channelName: "Love & Pies",
-    handle: "@loveandpiesgame",
-    channelCreated: "May 29, 2020",
-    channelAge: "5.4 years",
-    videosInDataset: "60"
+  platformOverview: {
+    platform: "Instagram",
+    handle: "@ghosttequila",
+    followers: "10K–50K (low-to-mid five figures)",
+    followersConfidence: "estimated",
+    following: "N/A",
+    postCount: "N/A",
+    bio: "🌶 Perfectly Balanced Spicy Tequila 🔥 #getghosted (link to shop visible via scraper)",
+    verified: false
   },
-  performanceMetrics: {
-    avgViewsPerVideo: "61.01K",
-    avgLikesPerVideo: "459",
-    avgCommentsPerVideo: "35",
-    medianViews: "1.23K",
-    avgLikeViewRatio: "0.75%",
-    avgCommentViewRatio: "0.06%",
-    avgEngagementRate: "0.81%"
-  },
-  currentYearAnalysis: {
-    monthlyData: [
-      {
-        month: "Feb",
-        views: 387,
-        likes: 16,
-        comments: 0
-      },
-      {
-        month: "Mar",
-        views: 1217,
-        likes: 19.5,
-        comments: 2
-      },
-      {
-        month: "Apr",
-        views: 3232.33,
-        likes: 31.67,
-        comments: 1.33
-      },
-      {
-        month: "May",
-        views: 1092.67,
-        likes: 16.33,
-        comments: 0.67
-      },
-      {
-        month: "Jun",
-        views: 46245,
-        likes: 1176,
-        comments: 56
-      },
-      {
-        month: "Oct",
-        views: 501.29,
-        likes: 8.57,
-        comments: 0
-      }
+  contentAnalysis: {
+    postCadence: "Active; cadence not specified",
+    contentThemes: [
+      "Spicy cocktail recipes",
+      "User-generated content (UGC)",
+      "Event highlights",
+      "Bartenders mixing Ghost Margaritas",
+      "Lifestyle photos from events",
+      "Influencer collaborations (e.g., @BadBirdy)"
     ],
-    summaryCards: [
-      {
-        label: "Best Month by Views",
-        value: "Jun",
-        detail: "46.24K avg views"
-      },
-      {
-        label: "Engagement Trend",
-        value: "Positive",
-        detail: "Feb → Oct"
-      },
-      {
-        label: "Publishing Frequency",
-        value: "~2.8 videos/month",
-        detail: "Based on current year uploads"
-      }
-    ]
+    formatMix: "Mix of Reels and static posts",
+    hashtagStrategy: "#getghosted #perfectlyspicy; frequent tags of bars and mixologists"
   },
-  topVideos: [
+  engagementMetrics: {
+    avgLikesPerPost: "Dozens to a few hundred",
+    avgCommentsPerPost: "A handful per post",
+    engagementRateEstimate: "0.5%–2% (estimated)",
+    sampleSize: "N/A",
+    sampleNote: "Based on partial visibility of recent posts; exact counts hidden without login",
+    confidence: "estimated" as const
+  },
+  crossPlatformPresence: [
+    {
+      name: "Facebook",
+      handle: "Ghost Tequila (Page)",
+      followers: "Limited/unspecified",
+      confidence: "estimated" as const,
+      description: "Nominal presence; likely cross-posts from Instagram; low direct engagement"
+    },
+    {
+      name: "Twitter/X",
+      handle: "@ghosttequila",
+      followers: "600–700 (621 in late 2022 snapshot)",
+      confidence: "estimated" as const,
+      description: "Minor channel; infrequent tweets; mirrors Instagram messaging"
+    },
+    {
+      name: "TikTok",
+      handle: "No prominent official account found",
+      followers: "N/A",
+      confidence: "sparse" as const,
+      description: "No verified brand account; brand appears indirectly via cocktail creators and hashtag confusion with an unrelated product"
+    },
+    {
+      name: "YouTube",
+      handle: "No official channel",
+      followers: "N/A",
+      confidence: "confirmed" as const,
+      description: "Presence via third-party reviews and cocktail demos (earned media)"
+    }
+  ],
+  topContent: [
     {
       rank: 1,
-      title: "What's In The Basement? - Love & Pies Merge Game",
-      views: "2.67M",
-      engagement: "220",
-      engagementRate: "0.01%",
-      type: "Short",
-      year: "2022",
-      duration: "38s"
+      platform: "TikTok",
+      description: "Hashtag #GhostTequila dominated by viral ghost-shaped 'Gran Agave Ghost Edition' bottle trend (unrelated to Ghost Spirits LLC)",
+      metric: "Millions of views (trend-level)",
+      type: "TikTok trend (earned/third-party; unrelated brand confusion)",
+      confidence: "confirmed" as const
     },
     {
       rank: 2,
-      title: "Love & Pies: Ultimate Couples Challenge",
-      views: "237.23K",
-      engagement: "5.87K",
-      engagementRate: "2.47%",
-      type: "Long",
-      year: "2024",
-      duration: "14m"
+      platform: "Instagram",
+      description: "Collaboration with @BadBirdy featuring a 'Perfectly Spicy Margarita' video",
+      metric: "Engagement not publicly visible",
+      type: "Reel/Video (influencer collaboration)",
+      confidence: "confirmed" as const
     },
     {
       rank: 3,
-      title: "Love & Piescast - Episode 1: Values",
-      views: "143.61K",
-      engagement: "3.71K",
-      engagementRate: "2.58%",
-      type: "Long",
-      year: "2024",
-      duration: "13m"
+      platform: "YouTube",
+      description: "Long Island Lou Tequila review of Ghost Tequila",
+      metric: "A few thousand views",
+      type: "YouTube review (third-party)",
+      confidence: "estimated" as const
     },
     {
       rank: 4,
-      title: "Love & Piescast - Episode 2 - Diversity in Design",
-      views: "132.99K",
-      engagement: "3.51K",
-      engagementRate: "2.64%",
-      type: "Long",
-      year: "2024",
-      duration: "12m"
+      platform: "YouTube",
+      description: "Assorted 'Spicy Margarita with Ghost Tequila' and 'spicy tequila challenge' videos on cocktail channels",
+      metric: "Typically 1K–5K views per video",
+      type: "YouTube cocktail demos (third-party)",
+      confidence: "estimated" as const
     },
     {
       rank: 5,
-      title: "Love & Piescast - Episode 3: Art & Events",
-      views: "88.81K",
-      engagement: "2.8K",
-      engagementRate: "3.15%",
-      type: "Long",
-      year: "2024",
-      duration: "11m"
-    },
-    {
-      rank: 6,
-      title: "Love & Piescast - Episode 4: Community",
-      views: "81.16K",
-      engagement: "3.15K",
-      engagementRate: "3.88%",
-      type: "Long",
-      year: "2024",
-      duration: "11m"
-    },
-    {
-      rank: 7,
-      title: "[OFFICIAL] Love & Pies - Merge 40s Launch Trailer",
-      views: "77.66K",
-      engagement: "121",
-      engagementRate: "0.16%",
-      type: "Short",
-      year: "2021",
-      duration: "40s"
-    },
-    {
-      rank: 8,
-      title: "Love & Pride - Intro",
-      views: "46.38K",
-      engagement: "4.55K",
-      engagementRate: "9.82%",
-      type: "Short",
-      year: "2024",
-      duration: "44s"
-    },
-    {
-      rank: 9,
-      title: "Love & Piescast: Pride Special 2025! 🌈",
-      views: "46.24K",
-      engagement: "1.23K",
-      engagementRate: "2.66%",
-      type: "Long",
-      year: "2025",
-      duration: "19m"
-    },
-    {
-      rank: 10,
-      title: "Love & Pies Kate's Spoooky Costume Party 👻",
-      views: "34.72K",
-      engagement: "3.11K",
-      engagementRate: "8.97%",
-      type: "Short",
-      year: "2024",
-      duration: "50s"
+      platform: "Web",
+      description: "Drinkhacker review rating Ghost Tequila Blanco a 'B' (8.0/10), noting hot but balanced pepper and fruity finish",
+      metric: "Editorial review (no public engagement metric)",
+      type: "Editorial review",
+      confidence: "confirmed" as const
     }
-  ]
+  ],
+  earnedMedia: {
+    summary: "Ghost Tequila is covered by third-party YouTube reviewers, cocktail channels, and editorial reviews; appears organically in some TikTok cocktail videos. A separate viral TikTok trend for an unrelated ghost-shaped bottle contributes to hashtag confusion.",
+    mentionCount: "50+",
+    mentionCountConfidence: "estimated",
+    topMentions: [
+      {
+        source: "Long Island Lou Tequila (YouTube)",
+        description: "Independent review of Ghost Tequila; niche but notable reach"
+      },
+      {
+        source: "Drinkhacker (Chris Null)",
+        description: "Editorial review rating Ghost Tequila Blanco a 'B' (8.0/10)"
+      },
+      {
+        source: "Delish",
+        description: "Coverage of viral ghost-shaped tequila bottle that caused #GhostTequila hashtag confusion (unrelated to Ghost Spirits LLC)"
+      }
+    ]
+  },
+  keyInsights: {
+    strengths: [
+      "Clear brand positioning around spicy tequila",
+      "Instagram-centric strategy with visually appealing cocktail content",
+      "Leverages influencer bartenders (e.g., @BadBirdy)",
+      "Consistent branded hashtags (#getghosted, #perfectlyspicy)"
+    ],
+    patterns: [
+      "Reels of bartenders and cocktail recipes feature prominently",
+      "UGC and event highlights support community feel",
+      "Content likely cross-posted to Facebook with lower engagement",
+      "Earned visibility on YouTube via reviews and cocktail demos"
+    ],
+    gaps: [
+      "No official/verified TikTok presence; missed short-form discovery",
+      "No official YouTube channel; relies on third parties for education",
+      "Name collision on TikTok (#GhostTequila) creates discovery confusion",
+      "Twitter is minimally active with small follower base",
+      "Exact Instagram metrics obscured behind login, limiting transparency"
+    ]
+  }
 };
 
 export const communityData = {
-  introText: "Ghost Tequila’s community spans Reddit threads, cocktail creator hubs, bartender groups, and spicy food circles, mixing skepticism from purists with enthusiastic experimentation around heat and recipes.",
+  introText: "Ghost Tequila's community spans Reddit, cocktail social media, bartender forums, and spicy-food circles, mixing purist skepticism with enthusiastic praise and recipe sharing.",
   platforms: [
     {
       name: "Reddit",
       icon: "R",
       color: "orange",
-      description: "Active discussions across r/tequila, r/cocktails, r/spicy, and r/HotPeppers cover flavored-tequila debates, heat levels, serving ideas, and tongue-in-cheek hype.",
-      stats: []
+      description: "Active threads in r/tequila, r/cocktails, r/spicy, and r/HotPeppers with mixed sentiment, comparisons, and heat-level discussions.",
+      stats: [
+        {
+          label: "Active subreddits",
+          value: "4+"
+        },
+        {
+          label: "Named subreddits",
+          value: "r/tequila, r/cocktails, r/spicy, r/HotPeppers"
+        }
+      ]
     },
     {
       name: "Instagram",
       icon: "I",
       color: "purple",
-      description: "Cocktail creators share #ghosttequila posts and tag the brand in spicy margaritas and innovative recipes.",
-      stats: []
+      description: "UGC posts show bottles and spicy cocktails; mixologists tag the brand and feature recipes under #ghosttequila.",
+      stats: [
+        {
+          label: "Hashtag",
+          value: "#ghosttequila"
+        },
+        {
+          label: "Primary handle",
+          value: "@ghosttequila"
+        }
+      ]
     },
     {
-      name: "Facebook",
+      name: "Facebook (Bartender Groups)",
       icon: "F",
       color: "blue",
-      description: "Bartender groups and forums reference Ghost in spicy cocktail ingredient threads and share brand-posted recipes.",
-      stats: []
+      description: "Bartender communities share Ghost-centric recipes and discuss spicy cocktail ingredients alongside ancho and jalapeño spirits.",
+      stats: [
+        {
+          label: "Brand recipes cited",
+          value: "Ghost Pepper Margarita; Ghost Ranch Water"
+        }
+      ]
     },
     {
-      name: "TikTok",
-      icon: "T",
-      color: "black",
-      description: "Appears in cocktail circles via duets and spicy margarita challenges, though at low volume.",
-      stats: []
+      name: "The Hot Pepper (Forum)",
+      icon: "H",
+      color: "red",
+      description: "Chiliheads compare DIY ghost pepper infusions with the commercial product; noted for bold heat and humor-heavy commentary.",
+      stats: [
+        {
+          label: "Overlap with brand",
+          value: "Threads on ghost pepper tequila infusions vs. Ghost Tequila product"
+        }
+      ]
     }
   ],
   quote: {
     text: "ghost pepper tequila is to tequila what Fireball is to whiskey",
-    author: "Reddit user",
+    author: "Redditor",
     platform: "Reddit"
   },
-  closingText: "Overall, a niche but vocal mix of cocktail fans, heat-seekers, and tequila enthusiasts drives ongoing word-of-mouth and UGC across platforms."
+  closingText: "Overall, Ghost serves as a conversation piece that fuels UGC, cross-community chatter, and steady word-of-mouth."
 };
 
 export const sentimentData = {
@@ -552,7 +593,7 @@ export const dataGapsData = {
 };
 
 export const footerData = {
-  title: "Ghost Tequila The Hook – Spicy Tequila’s Multi-Platform Footprint",
+  title: "Ghost Tequila The Hook – Spicy Tequila's Multi-Platform Footprint",
   snapshotDate: "Snapshot captured 2026-04-14 (UTC) UTC",
   disclaimer: "All data from publicly available sources"
 };

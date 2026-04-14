@@ -1,1 +1,44 @@
-{"reportMetadata":{"date":"2026-04-14 (UTC)","title":"Ghost Tequila","subtitle":"The Hook – Spicy Tequila’s Multi-Platform Footprint","description":"Snapshot of Ghost Tequila’s multi-platform presence, ratings, and mentions based on publicly verifiable data."},"platformStats":[{"platform":"instagram","followers":"N/A"},{"platform":"twitter/x","followers":"N/A"},{"platform":"facebook","followers":"N/A"},{"platform":"tiktok","followers":"N/A"},{"platform":"youtube","followers":"N/A"},{"platform":"reddit","followers":"N/A"} ] 	, "chapters": []}
+{
+  "reportMetadata": {
+    "date": "2026-04-14 (UTC)",
+    "title": "Ghost Tequila",
+    "subtitle": "The Hook – Spicy Tequila's Multi-Platform Footprint",
+    "description": "Snapshot of Ghost Tequila's multi-platform presence, ratings, and mentions based on publicly verifiable data from the research report."
+  },
+  "platformStats": [
+    {
+      "platform": "instagram (@ghosttequila)",
+      "followers": "~10K-50K (estimated; login-gated exact count)"
+    },
+    {
+      "platform": "twitter/x (@ghosttequila)",
+      "followers": "~621 (Twstalker snapshot, late 2022)"
+    },
+    {
+      "platform": "facebook",
+      "followers": "Nominal brand page; engagement sparse vs. Instagram"
+    },
+    {
+      "platform": "tiktok",
+      "followers": "No verified owned account; earned cocktail UGC only"
+    },
+    {
+      "platform": "youtube",
+      "followers": "No owned channel; earned reviews typically few thousand views"
+    },
+    {
+      "platform": "reddit",
+      "followers": "Active threads across r/tequila, r/cocktails, r/spicy, r/HotPeppers"
+    }
+  ],
+  "chapters": [
+    {"id": "hook", "label": "The Hook", "emoji": "🌶️", "number": 1},
+    {"id": "instagram", "label": "Instagram & Social", "emoji": "📱", "number": 2},
+    {"id": "community", "label": "The Community", "emoji": "👥", "number": 3},
+    {"id": "sentiment", "label": "The Sentiment", "emoji": "💬", "number": 4},
+    {"id": "creative", "label": "Creative Impact", "emoji": "🎨", "number": 5},
+    {"id": "commercial", "label": "The Proof", "emoji": "📊", "number": 6},
+    {"id": "geographic", "label": "The Reach", "emoji": "🌎", "number": 7},
+    {"id": "opportunities", "label": "Opportunities", "emoji": "🚀", "number": 8}
+  ]
+}

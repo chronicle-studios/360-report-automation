@@ -1,1 +1,49 @@
-{"introText":"Ghost Tequila’s community spans Reddit threads, cocktail creator hubs, bartender groups, and spicy food circles, mixing skepticism from purists with enthusiastic experimentation around heat and recipes.","platforms":[{"name":"Reddit","icon":"R","color":"orange","description":"Active discussions across r/tequila, r/cocktails, r/spicy, and r/HotPeppers cover flavored-tequila debates, heat levels, serving ideas, and tongue-in-cheek hype.","stats":[]},{"name":"Instagram","icon":"I","color":"purple","description":"Cocktail creators share #ghosttequila posts and tag the brand in spicy margaritas and innovative recipes.","stats":[]},{"name":"Facebook","icon":"F","color":"blue","description":"Bartender groups and forums reference Ghost in spicy cocktail ingredient threads and share brand-posted recipes.","stats":[]},{"name":"TikTok","icon":"T","color":"black","description":"Appears in cocktail circles via duets and spicy margarita challenges, though at low volume.","stats":[]}],"quote":{"text":"ghost pepper tequila is to tequila what Fireball is to whiskey","author":"Reddit user","platform":"Reddit"},"closingText":"Overall, a niche but vocal mix of cocktail fans, heat-seekers, and tequila enthusiasts drives ongoing word-of-mouth and UGC across platforms."}
+{
+  "introText": "Ghost Tequila's community spans Reddit, cocktail social media, bartender forums, and spicy-food circles, mixing purist skepticism with enthusiastic praise and recipe sharing.",
+  "platforms": [
+    {
+      "name": "Reddit",
+      "icon": "R",
+      "color": "orange",
+      "description": "Active threads in r/tequila, r/cocktails, r/spicy, and r/HotPeppers with mixed sentiment, comparisons, and heat-level discussions.",
+      "stats": [
+        {"label": "Active subreddits", "value": "4+"},
+        {"label": "Named subreddits", "value": "r/tequila, r/cocktails, r/spicy, r/HotPeppers"}
+      ]
+    },
+    {
+      "name": "Instagram",
+      "icon": "I",
+      "color": "purple",
+      "description": "UGC posts show bottles and spicy cocktails; mixologists tag the brand and feature recipes under #ghosttequila.",
+      "stats": [
+        {"label": "Hashtag", "value": "#ghosttequila"},
+        {"label": "Primary handle", "value": "@ghosttequila"}
+      ]
+    },
+    {
+      "name": "Facebook (Bartender Groups)",
+      "icon": "F",
+      "color": "blue",
+      "description": "Bartender communities share Ghost-centric recipes and discuss spicy cocktail ingredients alongside ancho and jalapeño spirits.",
+      "stats": [
+        {"label": "Brand recipes cited", "value": "Ghost Pepper Margarita; Ghost Ranch Water"}
+      ]
+    },
+    {
+      "name": "The Hot Pepper (Forum)",
+      "icon": "H",
+      "color": "red",
+      "description": "Chiliheads compare DIY ghost pepper infusions with the commercial product; noted for bold heat and humor-heavy commentary.",
+      "stats": [
+        {"label": "Overlap with brand", "value": "Threads on ghost pepper tequila infusions vs. Ghost Tequila product"}
+      ]
+    }
+  ],
+  "quote": {
+    "text": "ghost pepper tequila is to tequila what Fireball is to whiskey",
+    "author": "Redditor",
+    "platform": "Reddit"
+  },
+  "closingText": "Overall, Ghost serves as a conversation piece that fuels UGC, cross-community chatter, and steady word-of-mouth."
+}

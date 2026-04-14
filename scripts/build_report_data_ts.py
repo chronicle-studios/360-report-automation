@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Regenerate love_and_pies/reportData.ts from the JSON payloads in love_and_pies/*.json.
+Regenerate report_output/reportData.ts from JSON payloads (metadata + generated section files).
 """
 
 from __future__ import annotations
@@ -36,7 +36,9 @@ def export_block(const_name: str, value) -> str:
 
 SECTION_FILE_CANDIDATES = [
     ("overviewData", ["overview.json"]),
-    ("youtubeData", ["youtube.json", "youtube_db.json", "instagram_social.json"]),
+    # Prefer instagram_social before youtube_db so brand-mode Ghost Tequila
+    # bundles are not shadowed by a leftover channel-mode youtube_db.json.
+    ("youtubeData", ["youtube.json", "instagram_social.json", "youtube_db.json"]),
     ("communityData", ["community.json"]),
     ("sentimentData", ["sentiment.json"]),
     ("creativeData", ["creative_impact.json", "creative.json"]),
@@ -90,7 +92,7 @@ def build_report(
         "metadata.json", canonical_dir, generated_dir=generated_dir
     )
     metadata = read_first_json_object(metadata_path)
-    parts = ["// Love & Pies Report Data (auto-generated from love_and_pies JSONs)\n"]
+    parts = ["// Ghost Tequila Report Data (auto-generated)\n"]
 
     parts.append(export_block("reportMetadata", metadata.get("reportMetadata", {})))
     parts.append(export_block("platformStats", metadata.get("platformStats", [])))
@@ -105,7 +107,7 @@ def build_report(
 
     report_meta = metadata.get("reportMetadata", {})
     footer = {
-        "title": f"{report_meta.get('title', 'Love & Pies')} {report_meta.get('subtitle', '')}".strip(),
+        "title": f"{report_meta.get('title', '360 Report')} {report_meta.get('subtitle', '')}".strip(),
         "snapshotDate": f"Snapshot captured {report_meta.get('date', '')} UTC".strip(),
         "disclaimer": "All data from publicly available sources",
     }
