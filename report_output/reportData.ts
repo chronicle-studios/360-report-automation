@@ -1,57 +1,73 @@
 // Love & Pies Report Data (auto-generated from love_and_pies JSONs)
 export const reportMetadata = {
-  date: "2025-11-18 UTC",
-  title: "M.O.M.: Mother of Madness",
-  subtitle: "Multi-Platform Snapshot",
-  description: "A one-line multi-platform snapshot of M.O.M.: Mother of Madness summarizing cross-platform reach, engagement, and media coverage."
+  date: "2026-04-14 (UTC)",
+  title: "Ghost Tequila",
+  subtitle: "The Hook – Spicy Tequila’s Multi-Platform Footprint",
+  description: "Snapshot of Ghost Tequila’s multi-platform presence, ratings, and mentions based on publicly verifiable data."
 };
 export const platformStats = [
   {
-    platform: "instagram (@mayamotherofmadness)",
-    followers: "about 15,000"
+    platform: "instagram",
+    followers: "N/A"
   },
   {
-    platform: "instagram (Emilia Clarke)",
-    followers: "millions"
+    platform: "twitter/x",
+    followers: "N/A"
+  },
+  {
+    platform: "facebook",
+    followers: "N/A"
+  },
+  {
+    platform: "tiktok",
+    followers: "N/A"
+  },
+  {
+    platform: "youtube",
+    followers: "N/A"
+  },
+  {
+    platform: "reddit",
+    followers: "N/A"
   }
 ];
 export const chapters = [];
 
 export const overviewData = {
-  introText: "Emilia Clarke’s three-issue M.O.M.: Mother of Madness generated a short-lived but widespread surge of attention across social platforms and press at launch, powered by her celebrity profile and strong initial sales. Engagement was broad in mid-2021 but tapered without lasting community hubs.",
+  introText: "Ghost Tequila—a ghost pepper–infused 100% Blue Weber agave spirit—has built a niche yet energetic online presence spanning social media, reviews, and industry press. Customer sentiment is notably positive, highlighted by strong ratings on a major delivery platform.",
   stats: [
     {
-      label: "Instagram Likes (Emilia Clarke launch post)",
-      value: "847000",
+      label: "Average Rating (DoorDash, Blanco)",
+      value: "4.8",
+      confidence: "confirmed" as const
+    },
+    {
+      label: "Reviews (DoorDash, Blanco)",
+      value: "50",
       confidence: "estimated" as const
     },
     {
-      label: "Instagram Comments (Emilia Clarke launch post)",
-      value: "4000",
-      confidence: "estimated" as const
+      label: "Social Platforms Observed",
+      value: "5",
+      confidence: "confirmed" as const
     },
     {
-      label: "Instagram Followers (@mayamotherofmadness)",
-      value: "15000",
-      confidence: "estimated" as const
+      label: "Spirits Databases Mentioned",
+      value: "2",
+      confidence: "confirmed" as const
     },
     {
-      label: "Instagram Likes (official release day post)",
-      value: "9600",
-      confidence: "estimated" as const
+      label: "Retailer Platforms Mentioned",
+      value: "3",
+      confidence: "confirmed" as const
     },
     {
-      label: "YouTube Views (Tonight Show clip)",
-      value: "682000",
-      confidence: "estimated" as const
-    },
-    {
-      label: "Goodreads Ratings",
-      value: "400",
-      confidence: "estimated" as const
+      label: "Press Outlets Mentioned",
+      value: "2",
+      confidence: "confirmed" as const
     }
   ],
-  closingText: "In sum, the title exemplifies a celebrity-driven comics launch that reached millions quickly but could not sustain long-term fan activity."
+  closingText: "Overall, the snapshot shows strong customer ratings and broad cross-platform visibility, indicating rising cultural traction for the brand."
 };
 
 export const youtubeData = {
@@ -237,292 +253,306 @@ export const youtubeData = {
 };
 
 export const communityData = {
-  introText: "Conversation clustered around the launch across general comics spaces, with mixed sentiment and no lasting dedicated hub; discussions spanned Reddit, forums, review sites, and some international niches.",
+  introText: "Ghost Tequila’s community spans Reddit threads, cocktail creator hubs, bartender groups, and spicy food circles, mixing skepticism from purists with enthusiastic experimentation around heat and recipes.",
   platforms: [
     {
       name: "Reddit",
       icon: "R",
       color: "orange",
-      description: "Debated in major subreddits (e.g., r/comicbooks) around announcement and issue #1; sentiment mixed-to-negative, critiques of writing drew upvotes; activity sporadic with no dedicated subreddit.",
+      description: "Active discussions across r/tequila, r/cocktails, r/spicy, and r/HotPeppers cover flavored-tequila debates, heat levels, serving ideas, and tongue-in-cheek hype.",
       stats: []
     },
     {
-      name: "ComicsHeatingUp Forum",
-      icon: "C",
-      color: "gray",
-      description: "Speculators weighed potential media options and collector value; reactions split from dismissive to pleasantly surprised; coordinated purchases of signed editions.",
+      name: "Instagram",
+      icon: "I",
+      color: "purple",
+      description: "Cocktail creators share #ghosttequila posts and tag the brand in spicy margaritas and innovative recipes.",
       stats: []
     },
     {
-      name: "Goodreads",
-      icon: "G",
-      color: "brown",
-      description: "Served as a review-driven micro-forum; a few hundred readers logged the book by end of 2021; Q&A saw questions without official responses.",
-      stats: []
-    },
-    {
-      name: "Telegram",
-      icon: "T",
+      name: "Facebook",
+      icon: "F",
       color: "blue",
-      description: "Mentioned within Spanish-language coverage of the 2023 translation; niche posts tracked modest interest.",
-      stats: [
-        {
-          label: "Views",
-          value: "292"
-        }
-      ]
+      description: "Bartender groups and forums reference Ghost in spicy cocktail ingredient threads and share brand-posted recipes.",
+      stats: []
+    },
+    {
+      name: "TikTok",
+      icon: "T",
+      color: "black",
+      description: "Appears in cocktail circles via duets and spicy margarita challenges, though at low volume.",
+      stats: []
     }
   ],
   quote: {
-    text: "The art is great... The story was a bit hard to follow",
+    text: "ghost pepper tequila is to tequila what Fireball is to whiskey",
     author: "Reddit user",
     platform: "Reddit"
   },
-  closingText: "Overall, engagement was brief and dispersed, briefly uniting celebrity followers and comics insiders without forming a persistent community base."
+  closingText: "Overall, a niche but vocal mix of cocktail fans, heat-seekers, and tequila enthusiasts drives ongoing word-of-mouth and UGC across platforms."
 };
 
 export const sentimentData = {
   overall: {
-    title: "Highly Polarized",
-    subtitle: "Love-it/hate-it split: Instagram and parts of Goodreads/CannonballRead praise empowerment, humor, and art; many comics readers on Goodreads and forums criticize writing and blunt satire."
+    title: "Broadly Positive",
+    subtitle: "Balanced heat and quality agave win approval; minor pushback from purists over infusion concept"
   },
   platformSentiments: [
     {
-      emoji: "❤️",
-      title: "Instagram",
-      description: "Strongly positive, led by Emilia Clarke fans; celebratory, feminist-empowerment tone with lots of affection and support for Clarke."
+      emoji: "🌟",
+      title: "Drizly/Instacart",
+      description: "Very positive (~4.8/5). Praised as smooth with a nice kick; frequently recommended for spicy Margaritas and Palomas."
     },
     {
-      emoji: "⚖️",
-      title: "Goodreads",
-      description: "Mixed clusters: numerous 5★ reviews praising empowerment and art alongside substantial 1–2★ reviews calling it messy, cringe, or too on-the-nose."
+      emoji: "👍",
+      title: "Distiller",
+      description: "Solid approval (4.08/5). Community notes balanced spice without overpowering the tequila character."
     },
     {
-      emoji: "⚖️",
-      title: "CannonballRead",
-      description: "Documented split between enthusiastic 'GO GIRL!' five-star responses and one-star pushback (notably some male readers bristling at overt feminist messaging)."
+      emoji: "📝",
+      title: "Drinkhacker (Enthusiast blog)",
+      description: "Highlights sweetness and citrus alongside controlled heat; ultimately a “Buy It” recommendation for something different."
     },
     {
-      emoji: "😬",
-      title: "Comics fan forums / hardcore sites",
-      description: "Leaning negative on writing quality and satire bluntness; a few 3–4★ defenders acknowledge interesting ideas despite flaws."
+      emoji: "🤔",
+      title: "Reddit/Forums (r/tequila)",
+      description: "Mixed to skeptical among purists. Some dismiss the infusion as gimmicky or one-dimensional heat, though quality isn’t questioned."
+    },
+    {
+      emoji: "🌶️",
+      title: "General consumers & on-premise",
+      description: "Perceived as medium heat—fun, novel, and great in cocktails. Used as a party/dare element; few truly negative reactions."
     }
   ],
   quotes: [
     {
-      text: "This is the girl-power chaos I needed",
-      platform: "Goodreads"
+      text: "it’s smooth with a nice kick",
+      platform: "Drizly/Instacart"
     },
     {
-      text: "so empowering and hilarious!",
-      platform: "Instagram"
+      text: "hot, but not overwhelming",
+      platform: "Drinkhacker"
     },
     {
-      text: "Mother of Dragons turned Mother of Madness, we stan a multi-talented queen",
-      platform: "Instagram"
+      text: "fruity smooth finish after the kick",
+      platform: "Drinkhacker"
     },
     {
-      text: "I’m in the 3–4 star camp… it makes good points…still something interesting",
-      platform: "Comics fan forum"
+      text: "Buy It",
+      platform: "Drinkhacker"
     },
     {
-      text: "tried to like it, but it’s a hot mess",
-      platform: "Goodreads"
+      text: "sorta flavored tequila but also not really tequila at all… I didn’t get much flavor, just heat",
+      platform: "Reddit"
     },
     {
-      text: "Cringe. I appreciate the idea, but the execution… no.",
-      platform: "Goodreads"
+      text: "perfectly spicy, without the burn",
+      platform: "Ghost Tequila (brand)"
     }
   ],
-  closingText: "Net result: a sharply split reception—empowerment and art win praise while writing and tone draw significant criticism, varying by platform and audience."
+  closingText: "Overall sentiment is positive and moderately enthusiastic: a well-executed spicy tequila celebrated for cocktail versatility, with limited skepticism centered on the idea of infusion rather than product quality."
 };
 
 export const creativeData = {
-  introText: "M.O.M.: Mother of Madness sparked a niche but notable wave of remixes and conversation despite its brief run. Creative output was modest, with a few standout fan tributes and light social buzz.",
+  introText: "Ghost Tequila functions as a creative catalyst, fueling spicy cocktail invention, social UGC, and influencer collaborations. Media spotlights and headline-worthy stunts have reinforced its status as the go-to “make it spicy” spirit.",
   stats: [
     {
-      label: "Fan Art Volume",
-      value: "Low",
-      trend: "IG reposts 2021; few on DeviantArt/Pixiv",
+      label: "Signature Cocktail",
+      value: "Perfectly Spicy Margarita",
+      trend: "Chilled Magazine, James Lane Post",
       confidence: "confirmed" as const
     },
     {
-      label: "Top IG Post",
-      value: "2.7K+ likes",
-      trend: "Aug 16, 2021 woodcut cover",
+      label: "UGC Volume",
+      value: "Dozens of Instagram posts",
+      trend: "#ghosttequila; brand reposts/Stories",
       confidence: "confirmed" as const
     },
     {
-      label: "Cosplay Presence",
-      value: "None significant",
-      trend: "No convention/Instagram showcases",
+      label: "Influencer Collaborations",
+      value: "Bad Birdy partnership",
+      trend: "Halloween 2023 signature drink, cross-promo",
       confidence: "confirmed" as const
     },
     {
-      label: "Fanfiction",
-      value: "None",
-      trend: "AO3 and FanFiction.net",
+      label: "Event Presence",
+      value: "Competitions & tastings",
+      trend: "Miami comp (2024); Tales/Bar Convent",
+      confidence: "inferred" as const
+    },
+    {
+      label: "Media Recognition",
+      value: "Featured and profiled",
+      trend: "Maxim 2020; Forbes, Gear Patrol, VinePair",
       confidence: "confirmed" as const
     },
     {
-      label: "Social Memes Reach",
-      value: "Minor",
-      trend: "Twitter memes; TikTok tens of thousands views",
-      confidence: "anecdotal" as const
-    },
-    {
-      label: "Industry Recognition",
-      value: "Mentioned",
-      trend: "Eisner panel note; variant covers collected",
-      confidence: "reported" as const
+      label: "Record Stunt",
+      value: "Largest spicy margarita (2024)",
+      trend: "Miami Beach event; World Red Eye coverage",
+      confidence: "confirmed" as const
     }
   ],
   highlights: [
     {
-      title: "Fan Art",
-      description: "A handful of tributes surfaced, including a woodcut cover reposted by the official IG that drew 2.7K+ likes. Overall volume remained small across major fan platforms."
+      title: "Cocktails",
+      description: "The Perfectly Spicy Margarita became a signature recipe featured in lifestyle media, while bartenders and bloggers riff with Bloody Marias, spicy Palomas, and more."
     },
     {
-      title: "Memes",
-      description: "Period-powered jokes and panel edits briefly circulated on Twitter; a couple of TikToks summarized the premise with limited reach. Reaction GIFs appeared but saw minimal usage."
+      title: "UGC",
+      description: "Home bartenders share bottle-and-cocktail shots tagged #ghosttequila; the brand frequently reposts and highlights fans who “got ghosted.”"
     },
     {
-      title: "Fanfiction",
-      description: "No entries on AO3 or FanFiction.net and no roleplay scenes emerged. The self-contained story and limited shipping hooks likely constrained output."
+      title: "Influencers",
+      description: "A collaboration with cocktail star Bad Birdy delivered a Halloween 2023 signature drink promoted across both audiences."
     },
     {
-      title: "Footprint",
-      description: "Referenced in blogs and academic notes on representation and menstruation in media, plus humor coverage on Cracked and entries on TV Tropes. Often cited as a quirky, memorable oddity."
+      title: "Media",
+      description: "Maxim spotlighted Ghost among top tequilas; Forbes, Gear Patrol, and VinePair reinforce its role as the spicy pick and cover product momentum."
     },
     {
-      title: "Industry",
-      description: "Variant covers by notable artists became collectible items, and some interior art was exhibited. The series received an Eisner panel mention but no awards."
+      title: "Record Stunt",
+      description: "In May 2024, Ghost staged the world’s largest spicy margarita in Miami Beach, generating photo galleries and social buzz around Cinco de Mayo."
     }
   ],
-  closingText: "Overall, M.O.M.’s creative echo is small but distinct—brief meme liftoff, a few admired artworks, and a cultural talking point on women’s bodies in comics. Its lasting mark is as a quirky case study rather than a large-scale fandom engine."
+  closingText: "From signature recipes to a record-setting margarita, Ghost converts heat into cultural momentum. It now anchors the conversation where tequila meets spice."
 };
 
 export const commercialData = {
-  introText: "Mother of Madness had a strong debut with top-chart placement, mixed reader ratings, and modest ongoing sales.",
+  introText: "Ghost Tequila shows clear commercial traction with a 2024 RNDC national distribution deal, 40+ state availability, multi-channel placements, and momentum from new product launches.",
   stats: [
     {
-      label: "Diamond Jul 2021 rank",
-      value: "#5",
-      trend: "debut",
-      confidence: "confirmed" as const
-    },
-    {
-      label: "Issue #1 units",
-      value: "80–100k",
-      trend: "estimate",
+      label: "State Availability",
+      value: "40+ states",
+      trend: "expanding",
       confidence: "estimated" as const
     },
     {
-      label: "Second printing",
-      value: "Yes",
-      trend: "rapid",
+      label: "Distribution",
+      value: "RNDC national",
+      trend: "expanding",
       confidence: "confirmed" as const
     },
     {
-      label: "Goodreads rating",
-      value: "3.1★",
+      label: "Reposado Launch",
+      value: "6,000 cases",
+      trend: "increasing",
+      confidence: "confirmed" as const
+    },
+    {
+      label: "Blanco Price (750ml)",
+      value: "$30-$35",
       trend: "stable",
       confidence: "confirmed" as const
     },
     {
-      label: "Amazon UK rating",
-      value: "4.6★",
+      label: "TequilaMatchmaker Score",
+      value: "75/100",
       trend: "stable",
       confidence: "confirmed" as const
     },
     {
-      label: "Amazon TPB rank",
-      value: "Top 20",
-      trend: "spike",
+      label: "Growth Score (CB)",
+      value: "82/100",
+      trend: "strong",
       confidence: "reported" as const
     }
   ],
-  supercellInvestment: {
-    title: "",
-    amount: "",
-    description: "",
-    impact: ""
+  notableHighlight: {
+    title: "RNDC National Distribution",
+    value: "RNDC national distribution (2024)",
+    description: "Secured nationwide distribution through Republic National Distributing Company, a top U.S. liquor distributor.",
+    impact: "Unlocked rapid multi-state rollout and deeper retail/on-premise penetration, accelerating brand growth."
   },
-  closingText: "Overall, it was a qualified success with profit signals but limited long-term expansion."
+  closingText: "Collectively, these signals indicate strong commercial momentum and an expanding U.S. footprint with growing consumer validation."
 };
 
 export const geographicData = {
-  introText: "M.O.M. saw strongest uptake in English-speaking markets, led by the US and UK, with spillover into other regions via media buzz and a later Spanish edition.",
+  introText: "Ghost Tequila has nationwide U.S. distribution with strongest traction in initial hubs like Massachusetts and Texas, expanding across key coastal and Midwest states and testing limited overseas availability.",
   primaryMarkets: [
-    "United States (largest market)",
-    "United Kingdom (launch event and strong media coverage)",
-    "Canada (moderate engagement)"
+    "United States (national distribution)",
+    "Massachusetts/New England (launch market)",
+    "Texas (early adopter market)",
+    "California (coastal urban stronghold)",
+    "Florida (RNDC expansion)",
+    "Illinois/Chicago (Midwest pocket)"
   ],
   emergingMarkets: [
-    "Spain (localized edition market, 2023)",
-    "Philippines (high search interest)",
-    "Brazil (fan-import driven, no local edition)"
+    "Canada (limited availability; LCBO sighting)",
+    "Ireland (select retailer; Celtic Whiskey Shop)",
+    "Europe (select retailers beyond Ireland)",
+    "Southeast US (rising seasonal interest)",
+    "Broader Midwest (beyond Chicago; growing bar adoption)",
+    "Arizona (college-town penetration; Tempe example)"
   ],
   languages: {
     primary: [
       "English"
     ],
-    secondary: [
-      "Spanish",
-      "Japanese",
-      "Russian",
-      "Arabic",
-      "Italian"
-    ]
+    secondary: []
   },
-  closingText: "Overall reach was broad but shallow, driven by Emilia Clarke’s publicity, with sustained engagement limited and ongoing discovery primarily organic."
+  closingText: "Primary strength remains the U.S., with early signs of growth in select international outlets and emerging regional interest within the Southeast and broader Midwest."
 };
 
 export const dataGapsData = {
-  introText: "The notes highlight missing public metrics and reliance on proxy indicators, with estimates flagged and some platform visibility constraints.",
+  introText: "Key data gaps, confidence tags, and methodological notes identified during the Ghost Tequila snapshot are summarized below.",
   confidenceLevels: [
     {
-      symbol: "⚠",
-      label: "Estimated / Inferred",
-      description: "Figures marked with ⚠ are inferred from context or partial data (e.g., SteamSpy ranges, review languages, platform popularity) and should be treated cautiously due to accuracy limits (post-2018 privacy changes and sparse/ephemeral evidence)."
+      symbol: "✅",
+      label: "Confirmed",
+      description: "Claims directly observed or verified via public, primary sources (e.g., RNDC distribution, average consumer rating on DoorDash/Drizly, major press features, and the record event coverage)."
+    },
+    {
+      symbol: "⚠️",
+      label: "Estimated",
+      description: "Points inferred from partial or indirect signals (e.g., follower counts and geographic spread estimated from contextual clues such as Twstalker, screenshots, or secondary indicators)."
+    },
+    {
+      symbol: "❔",
+      label: "Uncertain/Sparse",
+      description: "Areas with weak, anecdotal, or limited evidence (e.g., TikTok content scale, restricted Instagram metrics, and platforms with small review counts)."
     }
   ],
   limitations: [
     {
-      title: "Missing concrete player metrics",
-      description: "Exact sales figures and detailed demographics are not publicly available; analysis relied on proxy indicators such as Steam review counts, chart positions, and anecdotal evidence."
+      title: "Instagram Metrics Restrictions",
+      description: "Public viewing of Instagram profile stats is limited without login; Ghost’s follower count and precise engagement could not be directly confirmed. Estimates rely on contextual clues (e.g., Twstalker, screenshots) and are flagged ⚠️/❔. A logged-in check or official disclosure would improve accuracy."
     },
     {
-      title: "SteamSpy accuracy constraints",
-      description: "Owner count ranges provide only ballpark estimates and are less reliable after 2018 privacy changes."
+      title: "TikTok Brand Confusion",
+      description: "Searches for “Ghost Tequila” often surface a different product (Gran Agave’s ghost-shaped bottle). Social listening is noisy; manual curation and keyword/handle co-mentions were required to avoid conflation."
     },
     {
-      title: "No official regional or platform sales breakdowns",
-      description: "Where such figures are mentioned, they are inferred (⚠) from context or partial signals, e.g., review language distributions or platform popularity."
+      title: "Sparse Review Volumes",
+      description: "Ratings were gathered from sources like Drizly (via DoorDash) and Distiller, but review counts were sometimes small (e.g., ~12 on Distiller). Sentiment insights emphasize qualitative examples over robust quantification. Access to internal counts on platforms like Total Wine or Vivino was restricted by login/geo limits."
     },
     {
-      title: "Hidden or ephemeral engagement metrics",
-      description: "Metrics on newer platforms (e.g., TikTok views, Discord membership) are partially concealed or time-sensitive. Discord does not show member counts beyond certain limits; the cited 333 figure for r/TheChineseRoom came from a third party and may be outdated."
+      title: "Lack of Public Sales Figures",
+      description: "No public, precise sales or revenue data for Ghost. Proxies used (distribution deals, case production volumes such as 6,000 cases of Reposado, and funding news). No estimates of dollar sales or market share were made."
     },
     {
-      title: "Uncertainty flagging",
-      description: "Uncertain numbers are explicitly flagged with ⚠ to denote estimation or sparse evidence."
+      title: "Anonymity in Community Sources",
+      description: "Some quoted sentiments are from anonymous Reddit users. Individuals remain unnamed, but repeated themes across threads increased confidence (marked ✅ when consistent)."
     },
     {
-      title: "Search/platform visibility constraints",
-      description: "Some research steps—such as viewing historical Reddit threads or specific items—were limited by platform visibility; details in the source were truncated."
+      title: "Closed-Platform Visibility Gaps",
+      description: "Potential brand chatter on Facebook/LinkedIn (e.g., private groups, industry posts) was out of scope. Focus remained on public or broadly accessible sources; minor closed-community discussions may be missed."
+    },
+    {
+      title: "Entity Name Collisions",
+      description: "Multiple unrelated “ghost” mentions (e.g., Ghost energy drinks, ghost kitchens, Ghost the band, and Gran Agave Ghost Edition tequila) required strict disambiguation rules. Ambiguous cases were omitted or flagged unless clearly tied to Ghost Tequila (Ghost Spirits, LLC)."
     }
   ],
   metadata: {
-    researchDate: "2025-12-07 (UTC)",
-    method: "Triangulated using proxy indicators (Steam review counts, chart positions, anecdotal evidence); used SteamSpy ranges; inferred regional/platform splits from contextual signals (review language, platform popularity); supplemented with third-party snapshots for hidden metrics; flagged estimates with ⚠.",
-    note: "Extracted from 'DATA GAPS, LIMITATIONS & METHOD NOTES'; source text is partially truncated after the 'Search/Platform Visibility' bullet."
+    researchDate: "2026-04-14 (UTC)",
+    method: "Open-web synthesis of public sources with manual curation: cross-checking, handle/keyword co-mention rules, exclusion of unrelated 'ghost' entities, and transparency tags (✅/⚠️/❔) for evidence strength.",
+    note: "Ambiguities were disclosed rather than guessed (e.g., no exact follower numbers or sales figures); qualitative signals were emphasized where quantitative data was sparse."
   },
-  closingText: "This summarizes the data gaps, caveats, and methodological notes stated in the provided text."
+  closingText: "Overall, this delivers a multi-source snapshot of Ghost Tequila’s footprint grounded in verifiable evidence, with uncertainties clearly flagged for future validation."
 };
 
 export const footerData = {
-  title: "M.O.M.: Mother of Madness Multi-Platform Snapshot",
-  snapshotDate: "Snapshot captured 2025-11-18 UTC UTC",
+  title: "Ghost Tequila The Hook – Spicy Tequila’s Multi-Platform Footprint",
+  snapshotDate: "Snapshot captured 2026-04-14 (UTC) UTC",
   disclaimer: "All data from publicly available sources"
 };

@@ -1,6 +1,10 @@
 import os
+import re
 from dataclasses import dataclass
 from typing import Any, Dict, Optional
+
+# Responses API json_schema format.name must match ^[a-zA-Z0-9_-]+$.
+_INVALID_SCHEMA_NAME_CHARS = re.compile(r"[^a-zA-Z0-9_-]+")
 
 from openai import OpenAI
 
@@ -45,13 +49,22 @@ class OpenAIJsonExtractor:
             text={
                 "format": {
                     "type": "json_schema",
-                    "name": f"{request.section_name.replace(' ', '')}Extraction",
+                    "name": self._json_schema_format_name(request.section_name),
                     "schema": schema,
                 }
             },
         )
 
         return self._extract_text_from_response(response)
+
+    @staticmethod
+    def _json_schema_format_name(section_name: str) -> str:
+        compact = section_name.replace(" ", "")
+        safe = _INVALID_SCHEMA_NAME_CHARS.sub("_", compact)
+        safe = re.sub(r"_+", "_", safe).strip("_")
+        if not safe:
+            safe = "Section"
+        return f"{safe}Extraction"
 
     @staticmethod
     def _build_prompt(request: JsonExtractionRequest) -> str:

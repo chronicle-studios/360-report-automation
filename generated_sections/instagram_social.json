@@ -1,0 +1,145 @@
+{
+  "platformOverview": {
+    "platform": "Instagram",
+    "handle": "@ghosttequila",
+    "followers": "10K–50K (low-to-mid five figures)",
+    "followersConfidence": "estimated",
+    "following": "N/A",
+    "postCount": "N/A",
+    "bio": "🌶 Perfectly Balanced Spicy Tequila 🔥 #getghosted (link to shop visible via scraper)",
+    "verified": false
+  },
+  "contentAnalysis": {
+    "postCadence": "Active; cadence not specified",
+    "contentThemes": [
+      "Spicy cocktail recipes",
+      "User-generated content (UGC)",
+      "Event highlights",
+      "Bartenders mixing Ghost Margaritas",
+      "Lifestyle photos from events",
+      "Influencer collaborations (e.g., @BadBirdy)"
+    ],
+    "formatMix": "Mix of Reels and static posts",
+    "hashtagStrategy": "#getghosted #perfectlyspicy; frequent tags of bars and mixologists"
+  },
+  "engagementMetrics": {
+    "avgLikesPerPost": "Dozens to a few hundred",
+    "avgCommentsPerPost": "A handful per post",
+    "engagementRateEstimate": "0.5%–2% (estimated)",
+    "sampleSize": "N/A",
+    "sampleNote": "Based on partial visibility of recent posts; exact counts hidden without login",
+    "confidence": "estimated"
+  },
+  "crossPlatformPresence": [
+    {
+      "name": "Facebook",
+      "handle": "Ghost Tequila (Page)",
+      "followers": "Limited/unspecified",
+      "confidence": "estimated",
+      "description": "Nominal presence; likely cross-posts from Instagram; low direct engagement"
+    },
+    {
+      "name": "Twitter/X",
+      "handle": "@ghosttequila",
+      "followers": "600–700 (621 in late 2022 snapshot)",
+      "confidence": "estimated",
+      "description": "Minor channel; infrequent tweets; mirrors Instagram messaging"
+    },
+    {
+      "name": "TikTok",
+      "handle": "No prominent official account found",
+      "followers": "N/A",
+      "confidence": "sparse",
+      "description": "No verified brand account; brand appears indirectly via cocktail creators and hashtag confusion with an unrelated product"
+    },
+    {
+      "name": "YouTube",
+      "handle": "No official channel",
+      "followers": "N/A",
+      "confidence": "confirmed",
+      "description": "Presence via third-party reviews and cocktail demos (earned media)"
+    }
+  ],
+  "topContent": [
+    {
+      "rank": 1,
+      "platform": "TikTok",
+      "description": "Hashtag #GhostTequila dominated by viral ghost-shaped 'Gran Agave Ghost Edition' bottle trend (unrelated to Ghost Spirits LLC)",
+      "metric": "Millions of views (trend-level)",
+      "type": "TikTok trend (earned/third-party; unrelated brand confusion)",
+      "confidence": "confirmed"
+    },
+    {
+      "rank": 2,
+      "platform": "Instagram",
+      "description": "Collaboration with @BadBirdy featuring a 'Perfectly Spicy Margarita' video",
+      "metric": "Engagement not publicly visible",
+      "type": "Reel/Video (influencer collaboration)",
+      "confidence": "confirmed"
+    },
+    {
+      "rank": 3,
+      "platform": "YouTube",
+      "description": "Long Island Lou Tequila review of Ghost Tequila",
+      "metric": "A few thousand views",
+      "type": "YouTube review (third-party)",
+      "confidence": "estimated"
+    },
+    {
+      "rank": 4,
+      "platform": "YouTube",
+      "description": "Assorted 'Spicy Margarita with Ghost Tequila' and 'spicy tequila challenge' videos on cocktail channels",
+      "metric": "Typically 1K–5K views per video",
+      "type": "YouTube cocktail demos (third-party)",
+      "confidence": "estimated"
+    },
+    {
+      "rank": 5,
+      "platform": "Web",
+      "description": "Drinkhacker review rating Ghost Tequila Blanco a 'B' (8.0/10), noting hot but balanced pepper and fruity finish",
+      "metric": "Editorial review (no public engagement metric)",
+      "type": "Editorial review",
+      "confidence": "confirmed"
+    }
+  ],
+  "earnedMedia": {
+    "summary": "Ghost Tequila is covered by third-party YouTube reviewers, cocktail channels, and editorial reviews; appears organically in some TikTok cocktail videos. A separate viral TikTok trend for an unrelated ghost-shaped bottle contributes to hashtag confusion.",
+    "mentionCount": "50+",
+    "mentionCountConfidence": "estimated",
+    "topMentions": [
+      {
+        "source": "Long Island Lou Tequila (YouTube)",
+        "description": "Independent review of Ghost Tequila; niche but notable reach"
+      },
+      {
+        "source": "Drinkhacker (Chris Null)",
+        "description": "Editorial review rating Ghost Tequila Blanco a 'B' (8.0/10)"
+      },
+      {
+        "source": "Delish",
+        "description": "Coverage of viral ghost-shaped tequila bottle that caused #GhostTequila hashtag confusion (unrelated to Ghost Spirits LLC)"
+      }
+    ]
+  },
+  "keyInsights": {
+    "strengths": [
+      "Clear brand positioning around spicy tequila",
+      "Instagram-centric strategy with visually appealing cocktail content",
+      "Leverages influencer bartenders (e.g., @BadBirdy)",
+      "Consistent branded hashtags (#getghosted, #perfectlyspicy)"
+    ],
+    "patterns": [
+      "Reels of bartenders and cocktail recipes feature prominently",
+      "UGC and event highlights support community feel",
+      "Content likely cross-posted to Facebook with lower engagement",
+      "Earned visibility on YouTube via reviews and cocktail demos"
+    ],
+    "gaps": [
+      "No official/verified TikTok presence; missed short-form discovery",
+      "No official YouTube channel; relies on third parties for education",
+      "Name collision on TikTok (#GhostTequila) creates discovery confusion",
+      "Twitter is minimally active with small follower base",
+      "Exact Instagram metrics obscured behind login, limiting transparency"
+    ]
+  }
+}
