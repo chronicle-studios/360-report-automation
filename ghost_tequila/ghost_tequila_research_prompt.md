@@ -7,7 +7,7 @@ Parent Company: Ghost Spirits LLC
 Primary Canonical URL: https://www.ghosttequila.com/
 Product Lines: Blanco, Reposado, Ghost Pepper Infused (verify against site)
 Primary Social Handle: @ghosttequila (Instagram)
-Competitor Set: Tanteo, Ancho Reyes, Jalisco-heritage spicy tequilas (for qualitative positioning only)
+Competitor Set: 21 Seeds, Tanteo, 1800, Casamigos, Ancho Reyes, spicy liquors (jalapeño/pepper-infused spirits broadly), spicy canned cocktails (e.g., Cutwater Spicy Margarita, Ranch Rider, etc.) — for qualitative positioning only
 
 [ENTITY DISAMBIGUATION]
 "Ghost" is a high-collision term. Apply these rules throughout:
@@ -123,7 +123,7 @@ Press features: notable press coverage, interviews, profiles.
 Ratings and reviews: aggregate ratings from Drizly, Distiller, Vivino, etc. with review counts.
 DTC/e-commerce: brand website shop if it exists, pricing, shipping availability.
 SEO/Web Visibility: SERP ownership for "ghost tequila", "spicy tequila", related queries; knowledge panel presence.
-Competitive positioning (QUALITATIVE ONLY): note which competitor brands appear alongside Ghost Tequila in reviews, comparisons, and retailer listings. Describe competitive context qualitatively. Do NOT attempt to quantify share-of-voice or market share.
+Competitive positioning (QUALITATIVE ONLY): note which competitor brands appear alongside Ghost Tequila in reviews, comparisons, and retailer listings. Specifically look for how Ghost is positioned relative to: 21 Seeds (fruit-infused tequila), Tanteo (jalapeño/habanero tequila), 1800 (mainstream tequila with flavored line), Casamigos (celebrity craft tequila), Ancho Reyes (chili liqueur), and the emerging category of spicy canned cocktails (Cutwater Spicy Margarita, Ranch Rider, etc.). Describe competitive context qualitatively — where does Ghost fit in pricing, positioning, heat level, and audience relative to these? Do NOT attempt to quantify share-of-voice or market share.
 
 7) THE REACH — Geographic/Demographic Spread
 Distribution footprint: which states/regions, on-premise vs off-premise split, international availability.
