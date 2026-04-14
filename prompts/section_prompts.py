@@ -129,19 +129,20 @@ Example format (illustrative – don’t copy values verbatim):
 Return JSON only.
 """.strip(),
     "commercial": """
-Return JSON with introText, stats, closingText.
+Return JSON with introText, stats, notableHighlight, closingText.
 - stats: array of { label, value, trend, confidence } (up to 6 entries).
 - use 2 words max for the value
+- notableHighlight: the single most impressive commercial proof point (distribution milestone, award, press feature, etc.)
 
 Example:
 {
   "introText": "Commercial summary sentence.",
   "stats": [
-    { "label": "Google Play rating", "value": "4.4★", "trend": "stable", "confidence": "confirmed" }
+    { "label": "Retail Availability", "value": "30+ states", "trend": "expanding", "confidence": "estimated" }
   ],
-  "supercellInvestment": {
-    "title": "Supercell Investment",
-    "amount": "$60 million",
+  "notableHighlight": {
+    "title": "Notable Achievement",
+    "value": "Key metric or fact",
     "description": "Summary line.",
     "impact": "Impact line."
   },
@@ -165,6 +166,68 @@ Example:
   },
   "closingText": "Closing summary sentence."
 }
+""".strip(),
+    "instagram_social": """
+Extract Instagram and social media data from the research text. Return JSON with platformOverview, contentAnalysis, engagementMetrics, crossPlatformPresence, topContent, earnedMedia, keyInsights.
+
+- platformOverview: primary platform (Instagram) profile data. Include handle, followers, following, postCount, bio, verified status. Set followersConfidence to "confirmed", "estimated", or "sparse".
+- contentAnalysis: postCadence (e.g., "3-4 posts per week"), contentThemes (array of theme strings), formatMix (e.g., "60% Reels, 30% static, 10% carousel"), hashtagStrategy.
+- engagementMetrics: avgLikesPerPost, avgCommentsPerPost, engagementRateEstimate — note sampleSize and sampleNote (e.g., "Based on 20 most recent public posts"). Set confidence.
+- crossPlatformPresence: array of other platforms discovered (TikTok, Facebook, Twitter/X, YouTube, etc.) with handle, followers, confidence, description.
+- topContent: array of up to 5 standout pieces of content across all platforms, ranked by engagement. Each has rank, platform, description, metric (e.g., "12.4K likes"), type (e.g., "Reel", "Post", "TikTok"), confidence.
+- earnedMedia: summary of brand mentions by others, mentionCount with confidence, topMentions array of { source, description }.
+- keyInsights: strengths (array), patterns (array), gaps (array).
+
+Preserve confidence tags from the source material. If the research text marks something as Confirmed/Estimated/Sparse, carry that through.
+
+Example:
+{
+  "platformOverview": {
+    "platform": "Instagram",
+    "handle": "@ghosttequila",
+    "followers": "45.2K",
+    "followersConfidence": "confirmed",
+    "following": "1,200",
+    "postCount": "350",
+    "bio": "Ghost pepper infused tequila.",
+    "verified": false
+  },
+  "contentAnalysis": {
+    "postCadence": "3-4 posts per week",
+    "contentThemes": ["Product shots", "Cocktail recipes", "Events"],
+    "formatMix": "Mix of Reels and static posts",
+    "hashtagStrategy": "#ghosttequila #spicymargarita"
+  },
+  "engagementMetrics": {
+    "avgLikesPerPost": "850",
+    "avgCommentsPerPost": "25",
+    "engagementRateEstimate": "1.9%",
+    "sampleSize": "20",
+    "sampleNote": "Based on 20 most recent public posts",
+    "confidence": "estimated"
+  },
+  "crossPlatformPresence": [
+    { "name": "TikTok", "handle": "@ghosttequila", "followers": "12K", "confidence": "confirmed", "description": "Active with cocktail content" }
+  ],
+  "topContent": [
+    { "rank": 1, "platform": "Instagram", "description": "Spicy margarita Reel", "metric": "12.4K likes", "type": "Reel", "confidence": "confirmed" }
+  ],
+  "earnedMedia": {
+    "summary": "Featured in several cocktail blogs and YouTube reviews.",
+    "mentionCount": "50+",
+    "mentionCountConfidence": "estimated",
+    "topMentions": [
+      { "source": "VinePair", "description": "Included in best spicy tequilas list" }
+    ]
+  },
+  "keyInsights": {
+    "strengths": ["Strong visual brand identity"],
+    "patterns": ["Cocktail content drives highest engagement"],
+    "gaps": ["No TikTok presence"]
+  }
+}
+
+Return JSON only.
 """.strip(),
     "data_gaps": """
 Return JSON with introText, confidenceLevels, limitations, metadata, closingText.

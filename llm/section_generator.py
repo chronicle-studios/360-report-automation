@@ -43,6 +43,7 @@ class SectionJsonGenerator:
             "creative": ("Creative Impact", "creative_impact.md"),
             "commercial": ("Commercial Success", "commercial_success.md"),
             "geographic": ("Geographic Reach", "geographic_reach.md"),
+            "instagram_social": ("Instagram & Social", "youtube.md"),
             "data_gaps": ("Data Gaps", "data_gaps.md"),
         }
 

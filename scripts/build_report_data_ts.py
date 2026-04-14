@@ -36,7 +36,7 @@ def export_block(const_name: str, value) -> str:
 
 SECTION_FILE_CANDIDATES = [
     ("overviewData", ["overview.json"]),
-    ("youtubeData", ["youtube.json", "youtube_db.json"]),
+    ("youtubeData", ["youtube.json", "youtube_db.json", "instagram_social.json"]),
     ("communityData", ["community.json"]),
     ("sentimentData", ["sentiment.json"]),
     ("creativeData", ["creative_impact.json", "creative.json"]),

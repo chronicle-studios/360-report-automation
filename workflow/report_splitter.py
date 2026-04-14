@@ -19,7 +19,7 @@ class SectionDefinition:
 SECTION_DEFINITIONS: List[SectionDefinition] = [
     SectionDefinition("metadata", "metadata.md", ("^#+\\s*(the\\s+)?hook",)),
     SectionDefinition("overview", "overview.md", ("^#+\\s*overview",)),
-    SectionDefinition("primary_platform", "youtube.md", ("^#+\\s*youtube", "^#+\\s*primary\\s+platform")),
+    SectionDefinition("primary_platform", "youtube.md", ("^#+\\s*youtube", "^#+\\s*primary\\s+platform", "^#+\\s*instagram", "^#+\\s*social.*deep\\s*dive")),
     SectionDefinition("community", "community.md", ("^#+\\s*(the\\s+)?community",)),
     SectionDefinition("sentiment", "sentiment.md", ("^#+\\s*(the\\s+)?sentiment",)),
     SectionDefinition("creative", "creative_impact.md", ("^#+\\s*(the\\s+)?creative",)),

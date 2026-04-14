@@ -350,19 +350,19 @@ SECTION_SCHEMAS: Dict[str, Dict[str, Any]] = {
                     "required": ["label", "value", "trend", "confidence"],
                 },
             },
-            "supercellInvestment": {
+            "notableHighlight": {
                 "type": "object",
                 "properties": {
                     "title": {"type": "string"},
-                    "amount": {"type": "string"},
+                    "value": {"type": "string"},
                     "description": {"type": "string"},
                     "impact": {"type": "string"},
                 },
-                "required": ["title", "amount", "description", "impact"],
+                "required": ["title", "value", "description", "impact"],
             },
             "closingText": {"type": "string"},
         },
-        "required": ["introText", "stats", "supercellInvestment", "closingText"],
+        "required": ["introText", "stats", "notableHighlight", "closingText"],
     },
     "geographic": {
         "type": "object",
@@ -386,6 +386,114 @@ SECTION_SCHEMAS: Dict[str, Dict[str, Any]] = {
             "emergingMarkets",
             "languages",
             "closingText",
+        ],
+    },
+    "instagram_social": {
+        "type": "object",
+        "properties": {
+            "platformOverview": {
+                "type": "object",
+                "properties": {
+                    "platform": {"type": "string"},
+                    "handle": {"type": "string"},
+                    "followers": {"type": "string"},
+                    "followersConfidence": {"type": "string"},
+                    "following": {"type": "string"},
+                    "postCount": {"type": "string"},
+                    "bio": {"type": "string"},
+                    "verified": {"type": "boolean"},
+                },
+                "required": ["platform", "handle", "followers", "followersConfidence", "following", "postCount", "bio", "verified"],
+            },
+            "contentAnalysis": {
+                "type": "object",
+                "properties": {
+                    "postCadence": {"type": "string"},
+                    "contentThemes": {"type": "array", "items": {"type": "string"}},
+                    "formatMix": {"type": "string"},
+                    "hashtagStrategy": {"type": "string"},
+                },
+                "required": ["postCadence", "contentThemes", "formatMix", "hashtagStrategy"],
+            },
+            "engagementMetrics": {
+                "type": "object",
+                "properties": {
+                    "avgLikesPerPost": {"type": "string"},
+                    "avgCommentsPerPost": {"type": "string"},
+                    "engagementRateEstimate": {"type": "string"},
+                    "sampleSize": {"type": "string"},
+                    "sampleNote": {"type": "string"},
+                    "confidence": {"type": "string"},
+                },
+                "required": ["avgLikesPerPost", "avgCommentsPerPost", "engagementRateEstimate", "sampleSize", "sampleNote", "confidence"],
+            },
+            "crossPlatformPresence": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {"type": "string"},
+                        "handle": {"type": "string"},
+                        "followers": {"type": "string"},
+                        "confidence": {"type": "string"},
+                        "description": {"type": "string"},
+                    },
+                    "required": ["name", "handle", "followers", "confidence", "description"],
+                },
+            },
+            "topContent": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "rank": {"type": "integer"},
+                        "platform": {"type": "string"},
+                        "description": {"type": "string"},
+                        "metric": {"type": "string"},
+                        "type": {"type": "string"},
+                        "confidence": {"type": "string"},
+                    },
+                    "required": ["rank", "platform", "description", "metric", "type", "confidence"],
+                },
+            },
+            "earnedMedia": {
+                "type": "object",
+                "properties": {
+                    "summary": {"type": "string"},
+                    "mentionCount": {"type": "string"},
+                    "mentionCountConfidence": {"type": "string"},
+                    "topMentions": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "source": {"type": "string"},
+                                "description": {"type": "string"},
+                            },
+                            "required": ["source", "description"],
+                        },
+                    },
+                },
+                "required": ["summary", "mentionCount", "mentionCountConfidence", "topMentions"],
+            },
+            "keyInsights": {
+                "type": "object",
+                "properties": {
+                    "strengths": {"type": "array", "items": {"type": "string"}},
+                    "patterns": {"type": "array", "items": {"type": "string"}},
+                    "gaps": {"type": "array", "items": {"type": "string"}},
+                },
+                "required": ["strengths", "patterns", "gaps"],
+            },
+        },
+        "required": [
+            "platformOverview",
+            "contentAnalysis",
+            "engagementMetrics",
+            "crossPlatformPresence",
+            "topContent",
+            "earnedMedia",
+            "keyInsights",
         ],
     },
     "data_gaps": {

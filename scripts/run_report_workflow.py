@@ -66,6 +66,12 @@ def parse_args() -> argparse.Namespace:
         help="Optional channel handle (e.g. @loveandpiesgame) to store for reference.",
     )
     parser.add_argument(
+        "--mode",
+        choices=["channel", "brand"],
+        default="channel",
+        help="Pipeline mode: 'channel' (default) runs YouTube DB step; 'brand' skips it.",
+    )
+    parser.add_argument(
         "--verbose",
         action="store_true",
         help="Enable verbose logging.",
@@ -120,6 +126,7 @@ def main() -> None:
         report_source_path=args.report_source,
         channel_id=args.channel_id,
         channel_handle=args.channel_handle,
+        mode=args.mode,
     )
 
 

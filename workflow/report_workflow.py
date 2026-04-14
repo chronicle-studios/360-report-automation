@@ -185,9 +185,13 @@ class ReportWorkflow:
         report_source_path: Optional[Path] = None,
         channel_id: Optional[str] = None,
         channel_handle: Optional[str] = None,
+        mode: str = "channel",
     ) -> None:
         """
         Execute the end-to-end pipeline.
+
+        mode: "channel" (default) runs YouTube DB step; "brand" skips it
+              and relies on LLM extraction for the primary platform section.
         """
         report_path = Path(report_source_path or self.report_source)
 
@@ -201,7 +205,10 @@ class ReportWorkflow:
 
         self._split_report(report_path)
         self._generate_llm_sections()
-        self._generate_youtube_sections(channel_id=channel_id, channel_handle=channel_handle)
+        if mode == "channel":
+            self._generate_youtube_sections(channel_id=channel_id, channel_handle=channel_handle)
+        else:
+            self.logger.info("Brand mode: skipping YouTube DB step. Primary platform handled by LLM extraction.")
         self._build_typescript_bundle()
 
     # ------------------------------------------------------------------ #
