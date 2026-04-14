@@ -1,8 +1,9 @@
 SECTION_PROMPTS = {
     "metadata": """
-You must return valid JSON with keys reportMetadata, platformStats.
+You must return valid JSON with keys reportMetadata, platformStats, chapters (all three are required).
 - reportMetadata: include date, title of channel, subtitle exactly as written. description must be a 1-line summary of what the report is.
-- platformStats: array of { "platform": string, "followers": string } entries (limit 6).
+- platformStats: array of { "platform": string, "followers": string } entries (limit 6). Use the best available follower/subscriber/member counts from the section text; if a platform hides counts (e.g. login wall), put a short human-readable note with the best proxy (e.g. "Not visible without login — see section") instead of "N/A" when the text explains why.
+- chapters: **exactly 8** objects in narrative order, each { "id": string, "label": string, "emoji": string, "number": integer } with number 1..8. Use these ids in order: "overview", "youtube", "community", "sentiment", "creative", "proof", "reach", "data". Label "youtube" as **Instagram & Social** (or **Primary Social**) when the report is brand-first / Instagram-primary; other labels should match the report section names (Overview, Community, Sentiment, Creative Impact, Commercial, Geographic Reach, Data Notes).
 
 Example structure (use it as a template, do NOT reuse the literal values):
 {
@@ -15,6 +16,16 @@ Example structure (use it as a template, do NOT reuse the literal values):
   "platformStats": [
     { "platform": "instagram", "followers": "245K" },
     { "platform": "facebook", "followers": "201K" }
+  ],
+  "chapters": [
+    { "id": "overview", "label": "Overview", "emoji": "📊", "number": 1 },
+    { "id": "youtube", "label": "Instagram & Social", "emoji": "📸", "number": 2 },
+    { "id": "community", "label": "Community", "emoji": "🤝", "number": 3 },
+    { "id": "sentiment", "label": "Sentiment", "emoji": "❤️", "number": 4 },
+    { "id": "creative", "label": "Creative Impact", "emoji": "🎨", "number": 5 },
+    { "id": "proof", "label": "Commercial", "emoji": "💵", "number": 6 },
+    { "id": "reach", "label": "Geographic Reach", "emoji": "🌍", "number": 7 },
+    { "id": "data", "label": "Data Notes", "emoji": "🔍", "number": 8 }
   ]
 }
 """.strip(),
@@ -63,7 +74,7 @@ Example:
     "community": """
 Emit JSON with introText, platforms, quote, closingText.
 - introText must summarize the section (do not reuse the heading).
-- platforms: include at most FOUR entries. Each entry must have name, icon, color, description, and stats (stats array should contain only key/value metrics such as follower counts or membership numbers. Please only include numbers and not words, not narrative prose).
+- platforms: include at most FOUR entries. Each entry must have name, icon, color, description, and stats. **Every platform must include at least one stat** (never an empty stats array). Prefer follower/subscriber/member counts when present; otherwise use numeric signals from the text only (review counts, aggregate ratings, number of named communities, etc.). Stat values should be compact (mostly digits, K/M suffixes, decimals like 4.08/5) — no long sentences.
 - quote must contain text, author, platform.
 
 Example:
@@ -132,7 +143,7 @@ Return JSON only.
 Return JSON with introText, stats, notableHighlight, closingText.
 - stats: array of { label, value, trend, confidence } (up to 6 entries).
 - use 2 words max for the value
-- notableHighlight: the single most impressive commercial proof point (distribution milestone, award, press feature, etc.)
+- notableHighlight: the single most impressive commercial proof point (distribution milestone, award, press feature, etc.). If the text mentions a **national distributor agreement** (e.g. RNDC / Republic National) or equivalent wholesale deal, prefer that over generic availability claims when supported.
 
 Example:
 {
